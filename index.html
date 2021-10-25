@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alquiler de Auditorios</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="misFunciones/Tipo.js"></script>
+    <script type="text/javascript" src="misFunciones/Auditorio.js"></script>
+    <script type="text/javascript" src="misFunciones/Cliente.js"></script>
+    <script type="text/javascript" src="misFunciones/Mensaje.js"></script>
+    <script type="text/javascript" src="misFunciones/Reservaciones.js"></script>
+
+</head>
+<body>
+    <hr size="5", color="black"></hr>
+    <h1 style="color: blue;">Tipo</h1>
+    <div id="resultado1"></div>
+    <button onclick="traerInformacionTipo()">Consultar Tipo</button>
+
+    <div>
+        <input type="text" id="Tname" placeholder="nombre">
+        <input type="text" id="Tdescription" placeholder="descripcion">
+    </div>
+    <button onclick="guardarInformacionTipo()">Guardar Tipo</button>
+
+    <hr size="10", color="black"></hr>
+    <h1 style="color: blue;">Auditorios</h1>
+    <div id="resultado2"></div>
+    <button onclick="traerInformacionAuditorios()">Consultar Auditorios</button>
+
+    <div>
+        <input type="text" id="Aname" placeholder="nombre">
+        <input type="text" id="Aowner" placeholder="dueño">
+        <input type="number" id="Acapacity" placeholder="capacidad">
+        <input type="text" id="Adescription" placeholder="descripcion">
+    </div>
+    <button onclick="guardarInformacionAuditorios()">Guardar Auditorios</button>
+
+    <hr size="10", color="black"></hr>
+    <h1 style="color: blue;">Clientes</h1>
+    <div id="resultado3"></div>
+    <button onclick="traerInformacionClientes()">Consultar Clientes</button>
+
+    <div>
+        <input type="text" id="Cemail" placeholder="correo electronico">
+        <input type="text" id="Cpassword" placeholder="contraseña">
+        <input type="text" id="Cname" placeholder="nombre">
+        <input type="number" id="Cage" placeholder="edad">
+    </div>
+    <button onclick="guardarInformacionClientes()">Guardar Clientes</button>
+    
+    <hr size="10", color="black"></hr>
+    <h1 style="color: blue;">Mensajes</h1>
+    <div id="resultado4"></div>
+    <button onclick="traerInformacionMensajes()">Consultar Mensajes</button>
+
+    <div>
+        <input type="text" id="MmessageText" placeholder="Mensaje">
+    </div>
+    <button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+
+    <hr size="10", color="black"></hr>
+    <h1 style="color: blue;">Reservaciones</h1>
+    <div id="resultado5"></div>
+    <button onclick="traerInformacionReservaciones()">Consultar Reservaciones</button>
+
+    <div>
+        <input type="date" id="RstartDate" placeholder="fecha de prestamo">
+        <input type="date" id="RdevolutionDate" placeholder="fecha de devolucion">
+        <br><button>fecha de prestamo</button>
+        <button>fecha de devolucion</button>
+        </br>
+
+        
+    </div>
+    <button onclick="guardarInformacionReservaciones()">Guardar Reservaciones</button>
+  
+</body>
+</html>
